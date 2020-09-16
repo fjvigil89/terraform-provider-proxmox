@@ -32,11 +32,9 @@ mkdir -p ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux
 cp $GOPATH/bin/terraform-provider-proxmox ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux_amd64
 cp $GOPATH/bin/terraform-provisioner-proxmox ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux_amd64
 
-## proyecto terraform 🖇️
- ### Ficheros
-
-main.tf
-
+## Proyecto Terraform 🖇️
+ ### main.tf
+[
 provider  "proxmox" {
     pm_api_url =  "https://dominio:8006/api2/json" 
     pm_user =  "root@pve" 
@@ -44,9 +42,9 @@ provider  "proxmox" {
     pm_tls_insecure = true
     pm_parallel = 2
 }
-
-versions.tf
-
+]
+ ###versions.tf
+[
 terraform {
   required_providers {
     proxmox = {
@@ -55,7 +53,7 @@ terraform {
   }
   required_version = ">= 0.13"
 }
-
+]
 
 ## Inicializar Terraform 🔩
 
