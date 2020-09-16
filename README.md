@@ -1,6 +1,4 @@
-# Título del Proyecto
-
-Configurar Terraform para Proxmox
+# Configurar Terraform para Proxmox
 
 ## Link 🚀
 
