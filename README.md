@@ -18,20 +18,23 @@ https://github.com/Telmate/terraform-provider-proxmox/blob/master/docs/index.md
 
 
 ## Descargar 🛠️
+```
 go get github.com/Telmate/terraform-provider-proxmox/cmd/terraform-provider-proxmox
 
 go get github.com/Telmate/terraform-provider-proxmox/cmd/terraform-provisioner-proxmox
-
+```
 ## Instalar 🛠️
+```
 go install github.com/Telmate/terraform-provider-proxmox/cmd/terraform-provider-proxmox
 go install github.com/Telmate/terraform-provider-proxmox/cmd/terraform-provisioner-proxmox
-
+```
 ## Plugins 📦
+```
 mkdir -p ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux_amd64
 
 cp $GOPATH/bin/terraform-provider-proxmox ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux_amd64
 cp $GOPATH/bin/terraform-provisioner-proxmox ~/.terraform.d/plugins/registry.terraform.io/telmate/proxmox/0.13/linux_amd64
-
+```
 ## Proyecto Terraform 🖇️
  ### main.tf
 ```
@@ -44,7 +47,7 @@ cp $GOPATH/bin/terraform-provisioner-proxmox ~/.terraform.d/plugins/registry.ter
 }
 ```
  ### versions.tf
-
+```
 terraform {
   required_providers {
     proxmox = {
@@ -53,8 +56,9 @@ terraform {
   }
   required_version = ">= 0.13"
 }
-
+```
 
 ## Inicializar Terraform 🔩
-
+```
 terraform init
+```
